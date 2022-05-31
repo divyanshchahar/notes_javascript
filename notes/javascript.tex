@@ -120,7 +120,6 @@
 	% CHAPTER- 001 %
 	%%%%%%%%%%%%%%%%
 	
-	
 	\chapter{Introduction}
 	
 	\section{Comments in JavaScript}
@@ -130,8 +129,108 @@
 	\begin{listing}[H]
 		\inputminted[linenos, autogobble, bgcolor=myjsbackground]{JavaScript}{../codes/js_comments.js}
 	\end{listing}
+
+	%%%%%%%%%%%%%%%%
+	% CHAPTER -002 %
+	%%%%%%%%%%%%%%%%
 	
-		
+	\chapter{Variables and Data Types}
+	
+	
+	\section{How are variables declared in JavaScript ?}
+	Variables in JavaScript can be declared using four different approaches as follows:
+	\begin{itemize}
+		\item Using the var keyword
+		\item Using the let keyword
+		\item Using const keyword
+		\item Direct variable declaration
+	\end{itemize}	
+	
+	\begin{listing}[H]
+		\inputminted[linenos, autogobble, bgcolor=myjsbackground]{JavaScript}{../codes/js_variables.js}
+	\end{listing}
+
+	\noindent 
+	It must be noted that var keyword is used in all versions of JavaScript whereas let and const were added to JavaScript in 2015. Thus if the developer wants to run the code in older browser he/she must use var.
+	
+	\section{Data Types in JavaScript}
+	
+	There are four data types in JavaScript:
+	\begin{itemize}
+		\item Numbers
+		\item Strings
+		\item Boolean
+		\item Objects
+	\end{itemize}
+	
+	\noindent To determine the data type of a variable in JavaScript \textbf{typeof} operator is used as shown in the code below
+	
+	\begin{listing}[H]
+		\inputminted[linenos, autogobble, bgcolor=myjsbackground]{JavaScript}{../codes/js_datatypes.js}
+	\end{listing}
+
+	%%%%%%%%%%%%%%%%%
+	% CHAPTER - 003 %
+	%%%%%%%%%%%%%%%%%
+	\chapter{Operators}
+	
+	Operators in JavaScript can be classified into two categories :
+	\begin{itemize}
+		\item Assignment Operators
+		\item Arithmetic Operators
+	\end{itemize}
+	
+	\section{Assignment Operators}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{c|c}
+			\textbf{Operator} & \textbf{Description}         \\ \hline
+			+                 & Addition                     \\
+			-                 & Subtraction                  \\
+			*                 & Multiplication               \\
+			**                & Exponentiation               \\
+			/                 & Division                     \\
+			\%                & Modulus (Division Remainder) \\
+			++                & Increment                    \\
+			--                & Decrement                   
+		\end{tabular}
+	\end{table}	
+
+	\section{Arithmetic Operators}
+	
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{c|c|c}
+			\textbf{Operator} & \textbf{Example} & \textbf{Same As} \\ \hline
+			=                 & x = y            & x = y            \\
+			+=                & x += y           & x = x + y        \\
+			-=                & x -= y           & x = x - y        \\
+			*=                & x *= y           & x = x * y        \\
+			/=                & x /= y           & x = x / y        \\
+			\%=               & x \%= y          & x = x \% y       \\
+			**=               & x **= y          & x = x ** y      
+		\end{tabular}
+	\end{table}
+
+	%%%%%%%%%%%%%%%%%
+	% CHAPTER - 004 %
+	%%%%%%%%%%%%%%%%%
+	
+	\chapter{Functions}
+	
+	\noindent Functions in JavaScript behave like function in other programming languages. However there is a slight difference that the author will highlight later. Given below is an example of a function in JavaScript.
+	
+	\begin{listing}[H]
+		\inputminted[linenos, autogobble, bgcolor=myjsbackground]{JavaScript}{../codes/js_functions.js}
+	\end{listing}
+	
+	\noindent Unlike other programming languages, in JavaScript it is possible to create objects of a function and using these objects we can invoke the function. Refer to line 9 in the above listing, it can be observed that a \textbf{mySum} object of function \textbf{myFunction} is created and is later used to invoke the function.
+	\\
+	\\
+	Using \textbf{()} invokes the function.
+	
 	\bibliographystyle{ieeetr}
 	\bibliography{myrefrences}
 	
